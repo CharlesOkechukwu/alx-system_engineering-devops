@@ -11,3 +11,4 @@
 11-directories print number of directories
 12-newest_files prrint latest ten files
 13-unique sort and return unique lines
+14-findthatword finds lines with a string
