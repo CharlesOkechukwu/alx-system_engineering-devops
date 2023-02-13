@@ -8,3 +8,4 @@
 7-file creates a new file and print
 8-cwd_state writes the result of ls -la in to a file ls_cwd_con
 9-duplicate_last_line duplicates the last line of the file iacta
+11-directories print number of directories
