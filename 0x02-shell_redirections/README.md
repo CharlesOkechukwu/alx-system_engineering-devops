@@ -15,3 +15,4 @@
 15-countthatword searches for a pattern and counts the lines with that pattern
 16-whatsnext prints three lines after matching pattern
 17-hidethisword displays lines that don't match a pattern
+18-letteronly displays all lines starting with letters
