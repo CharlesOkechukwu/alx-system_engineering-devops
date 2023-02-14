@@ -17,3 +17,4 @@
 17-hidethisword displays lines that don't match a pattern
 18-letteronly displays all lines starting with letters
 19-AZ translates the letter A c to Z e
+20-hiago cuts c from any input
