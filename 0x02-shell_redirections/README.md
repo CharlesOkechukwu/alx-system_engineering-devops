@@ -21,3 +21,4 @@
 21-reverse reverses any input
 22-users_and_homes display users and their directory
 100-empty_casks prints all empty files in current directory and sub directories
+101-gifs to print all files with .gif ending
