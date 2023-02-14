@@ -16,3 +16,4 @@
 16-whatsnext prints three lines after matching pattern
 17-hidethisword displays lines that don't match a pattern
 18-letteronly displays all lines starting with letters
+19-AZ translates the letter A c to Z e
