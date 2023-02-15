@@ -9,3 +9,4 @@ A readme file for the ALX variable expansion project
 7-create_global_variable creates global variable
 8-true_knowledge perform arithmetic expansion
 9-divide_and_rule divide two variables
+10-love_exponent_breath breath to the power of love
