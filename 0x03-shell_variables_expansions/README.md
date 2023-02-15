@@ -16,3 +16,4 @@ A readme file for the ALX variable expansion project
 100-decimal_to_hexadecimal converts a base ten number to base 16
 101-rot13 encrypt text with rot-13
 102-odd print all line from input starting from the first line
+103-water_and_stir adds two numbers stored in environmental variable
