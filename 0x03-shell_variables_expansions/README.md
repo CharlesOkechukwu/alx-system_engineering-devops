@@ -13,3 +13,4 @@ A readme file for the ALX variable expansion project
 11-binary_to_decimal converts base two to base 10
 12-combinations show possible combinations of two alphabets
 13-print_float prints number in 2 decimalplaces
+100-decimal_to_hexadecimal converts a base ten number to base 16
