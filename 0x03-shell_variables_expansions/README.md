@@ -3,3 +3,4 @@ A readme file for the ALX variable expansion project
 1-hello_you prints the name of the current user
 2-path adds /action to path
 3-paths counts the numbers of folders in path
+4-global_variables prints all global variables
