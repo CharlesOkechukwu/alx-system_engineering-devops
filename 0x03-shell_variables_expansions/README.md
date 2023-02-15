@@ -11,3 +11,4 @@ A readme file for the ALX variable expansion project
 9-divide_and_rule divide two variables
 10-love_exponent_breath breath to the power of love
 11-binary_to_decimal converts base two to base 10
+12-combinations show possible combinations of two alphabets
