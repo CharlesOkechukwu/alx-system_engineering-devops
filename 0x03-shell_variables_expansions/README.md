@@ -7,3 +7,4 @@ A readme file for the ALX variable expansion project
 5-local_variables prints all local variables
 6-create_local_variable create a local variable
 7-create_global_variable creates global variable
+8-true_knowledge perform arithmetic expansion
