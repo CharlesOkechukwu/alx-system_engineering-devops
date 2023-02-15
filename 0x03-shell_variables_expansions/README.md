@@ -10,3 +10,4 @@ A readme file for the ALX variable expansion project
 8-true_knowledge perform arithmetic expansion
 9-divide_and_rule divide two variables
 10-love_exponent_breath breath to the power of love
+11-binary_to_decimal converts base two to base 10
