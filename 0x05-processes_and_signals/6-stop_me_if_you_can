@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stop a running process without using kill
+PROC=$(pgrep -f 4-to_infinity_and_beyond)
+pkill -f "$PROC"
