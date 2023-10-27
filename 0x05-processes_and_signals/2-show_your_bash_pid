@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display lines containing bash in show running process command
+# shellcheck disable=SC2009
+ps -uxf | grep bash
