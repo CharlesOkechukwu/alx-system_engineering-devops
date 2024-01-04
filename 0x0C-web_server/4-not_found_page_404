@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# add 404 page
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/missing.html
+config="\terror_page 404 \/missing.html; \n\tlocation = \/missing.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}\n}"
+sed -i "s/^}$/$config/" /etc/nginx/sites-available/default
+service niginx restart
