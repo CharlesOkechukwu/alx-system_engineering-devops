@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-#fix apache2 server
-service apache2 start
