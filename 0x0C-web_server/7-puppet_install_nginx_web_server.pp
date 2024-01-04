@@ -14,15 +14,16 @@ file { 'index.html':
   content => 'Hello World!'
 }
 
-file_line { 'redirect':
+exec { 'restart':
+  command => '/usr/bin/service nginx restart',
+  require => Package['ngix']
+}
+
+file_line { 'set redirection':
+  ensure  => 'present',
   path    => '/etc/nginx/sites-available/default',
   after   => 'server_name _;',
   line    => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
   notify  => Exec['restart'],
-  require => Package['nginx']
-}
-
-exec { 'restart':
-  command => '/usr/bin/service nginx restart',
   require => Package['nginx']
 }
