@@ -1,4 +1,6 @@
 # for the installation of nginx and configuration of nginx server
+include stdlib
+
 exec { 'update':
   command => '/usr/bin/apt-get -y update'
 }
