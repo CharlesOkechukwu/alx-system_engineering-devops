@@ -6,5 +6,5 @@ ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
 link="https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4"
 new_string="\trewrite ^\/redirect_me $link permanent;\n}"
-sed -i "s/^}$/$new_string/" etc/nginx/sites-available/default
-service niginx restart
+sed -i "s/^}$/$new_string/" /etc/nginx/sites-available/default
+service nginx restart
