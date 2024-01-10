@@ -4,6 +4,6 @@ apt-get update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
-new_string="\t\tadd_header X-Served-By $(hostname):"
+new_string="\t\tadd_header X-Served-By $(hostname);"
 sed -i "s/^\tlocation \/ {$/&\n$new_string/" etc/nginx/sites-available/default
 service nginx restart
