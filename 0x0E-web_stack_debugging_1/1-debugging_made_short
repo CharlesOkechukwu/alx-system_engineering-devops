@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# make debugging shorter
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+rm -rf /var/run/nginx.pid
