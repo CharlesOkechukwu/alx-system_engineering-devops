@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# run whoami command on various users
-sudo -H -u "$1" bash -c "whoami"
