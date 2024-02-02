@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# display information on subdomains
+sub="$2"
+sub_domain=("www" "lb-01" "web-01" "web-02")
+function dns_check () 
+{
+	record=$(dig "$1" | grep -A1 'ANSWER SECTION:' | tail -n 1)
+	echo "$record" | awk '{print "The Subdomain","'"$sub"'","is a", $4,"record and points to",$5}'
+}
+
+if [ -z "$2" ]
+then
+	for sub in "${sub_domain[@]}"
+	do
+		host="$sub.$1"
+		dns_check "$host"
+	done
+else
+	dns_check "$sub.$1"
+fi
