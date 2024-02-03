@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# fix nginx server error
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx start
