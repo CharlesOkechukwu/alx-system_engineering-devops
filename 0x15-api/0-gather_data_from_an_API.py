@@ -13,7 +13,7 @@ def get_records(user_id):
     task_url = "{}/todos".format(user_url)
 
     user = requests.get(user_url).json()
-    tasks = requests.get(task_url).json()  
+    tasks = requests.get(task_url).json()
     comp = [t.get("title") for t in tasks if t.get("completed")]
     name = user.get("name")
     string = "Employee {} is done with tasks({}/{}):"
