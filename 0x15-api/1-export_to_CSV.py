@@ -17,7 +17,7 @@ def to_csv(user_id):
     uname = user.get("username")
     with open("{}.csv".format(user_id), 'w', encoding='utf-8') as f:
         for t in tasks:
-            string = "'{}', '{}', '{}', '{}'\n"
+            string = '"{}", "{}", "{}", "{}"\n'
             comp = t.get("completed")
             r = string.format(user_id, uname, comp, t.get("title"))
             f.write(r)
