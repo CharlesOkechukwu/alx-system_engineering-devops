@@ -2,7 +2,7 @@
 
 During the release of the User management system of the Alx wordpress site at approximately 7:00 pm Greenwich Mean Time(GMT) requests to the server returned a 500 internal server erro instead of a html file which contains the user login page. This made many users unable to login  to thier user accounts within same period.
 
-## Debugging Timeline U+1F41B ##
+## Debugging Timeline :wrench: ##
 * Around 7:15pm  Greenwich Mean Time,I recieved a pager notifying mr Bright and myself of an increased read request, we also recieved tickets around 7:20pm grenwich mean time(GMT) notiying us about the 500 internam server error returned by our server.
 
 * I responded to the pager alert around 7:25pm greenwich mean time(GMT), I proceeded in solving the problem, I used ``strace`` and ``termus`` to divide the terminal into two screens. I used one to run the strace, and the other to perform curl requests to the page which returned a ``500 internal server error``.
