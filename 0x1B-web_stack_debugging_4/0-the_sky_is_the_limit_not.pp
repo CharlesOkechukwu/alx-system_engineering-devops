@@ -2,7 +2,7 @@
 
 exec {'increase limit':
   command => 'sed -i "s/15/3000" /etc/default/nginx',
-  path    => '/usr/local/bin/:/bin/'
+  path    => '/usr/bin:/usr/sbin:/bin'
 }
 
 # restart
